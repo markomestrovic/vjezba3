@@ -1,17 +1,16 @@
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
 import CTA from '../components/CTA.js';
 import Testimonials from '../components/Testimonials.js';
+import HeaderFooterLayout from '../layouts/HeaderFooterLayout.js';
 
-const Hello = () => {
+const Home = () => {
     return (
         <>
-            <Header />
-            <CTA />
-            <Testimonials />
-            <Footer />
+            <HeaderFooterLayout>
+                <CTA />
+                <Testimonials />
+            </HeaderFooterLayout>
         </>
     );
 };
 
-export default Hello;
+export default Home;
